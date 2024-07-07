@@ -1,17 +1,18 @@
 .main{
  display: flex;
  flex-direction: row;
- padding-top: 50px;
+ padding-top: px;
  align-items: center;
-
+justify-content: center;
  height: 100vh;
 
 }
 .track{
     border: 1px solid black;
     border-radius: 20px;
-    width: 300px;
+    width: 500px;
     height: 500px;
+
 }
 .amt{
     border: 1px solid black;
@@ -26,8 +27,9 @@ color: #343a40;
 }
 .form{
     border: 1px solid black;
-    width: 500px;
+    
     height: 500px;
     border-radius: 20px;
     margin-left: 50px;
+    padding: 50px;
 }

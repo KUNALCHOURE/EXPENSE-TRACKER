@@ -18,7 +18,7 @@ export default function Tracker() {
                
     <div className="form">
        <h2>ADD A TRANSACTION</h2>
-          <form onSubmit className="p-3 bg-light rounded">
+          <form onSubmit className="p-3  rounded">
 
                  <div className="mb-3">
                       <label htmlFor="description" className="form-label">Description</label>

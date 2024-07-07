@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import './App.css'
+import Tracker from './show'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+ 
   return (
     <>
-      
+      <h1>EXPENSE TRACKER</h1>
+      <Tracker/>
     </>
   )
 }

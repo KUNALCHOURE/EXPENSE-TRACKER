@@ -1,21 +1,12 @@
 import { useState } from "react";
 
-export default function Forms(){
-    let [data,setdata]=useState({description: "",amount:null,category:""});
-    let handlechange=(event)=>{
-        let feild =event.target.name;
-        let val=event.target.value;
-       
-        setdata((currentval)=>{
-            currentval[feild]=val;
-            return{...currentval}
-        });
-    }
+export default function Forms(data,handlechange,handlesubmit){
+
     return (
         <div className="form">
        <h2>ADD A TRANSACTION</h2>
       
-          <form onSubmit className="p-3  rounded">
+          <form onSubmit={handlesubmit} className="p-3  rounded">
 
                  <div className="mb-3">
                       <label htmlFor="description" className="form-label">Description</label>
@@ -38,7 +29,7 @@ export default function Forms(){
                            id="amount" 
                         name="amount" 
                        value={data.amount}
-                       onChange={handlechange} 
+                       onChange={handlechange}
                         placeholder="Enter amount"                             required 
                             />
                    </div>
@@ -48,7 +39,7 @@ export default function Forms(){
                       className="form-control" 
                         id="category" 
                          name="category" 
-                         onChange={handlechange} 
+                         onChange={handlechange}
                         
                      required
                         >
@@ -61,7 +52,7 @@ export default function Forms(){
                                 <option value="Other">Other</option>
                             </select>
                         </div>
-                        <button type="submit" className="btn btn-primary">Add Expense</button>
+                        <button type="submit" className="btn btn-primary" >Add Expense</button>
                     </form>
                 </div>
     )

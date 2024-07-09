@@ -3,7 +3,20 @@ import './show.css';
 import Forms from './form';
 
 export default function Tracker() {
-  
+    let [data,setdata]=useState({description: "",amount:null,category:""});
+    let handlechange=(event)=>{
+        let feild =event.target.name;
+        let val=event.target.value;
+       
+        setdata((currentval)=>{
+            currentval[feild]=val;
+            return{...currentval}
+        });
+    }
+
+    let handlesubmit=()=>{
+        return{...data}
+    }
     return (
         <>
             <div className="main">
@@ -18,7 +31,7 @@ export default function Tracker() {
                     </ul>
                 </div>
                
-      <Forms/>
+      <Forms data={data} handlechange={handlechange} handlesubmit={handlesubmit}/>
             </div>
         </>
     );

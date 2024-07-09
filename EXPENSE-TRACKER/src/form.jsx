@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Forms(data,handlechange,handlesubmit){
+export default function Forms({data,handlechange,handlesubmit}){
 
     return (
         <div className="form">

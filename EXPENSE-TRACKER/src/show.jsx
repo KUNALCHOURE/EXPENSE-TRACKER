@@ -37,6 +37,9 @@ export default function Tracker() {
         });
     }
 
+    let handledelete=()=>{
+        
+    }
     return (
         <>
             <div className="main">
@@ -50,7 +53,7 @@ export default function Tracker() {
               {expense.map((expense, index) => (
                     <li key={index}>
                       {expense.description} - {expense.amount}
-                      <button>DELETE</button>
+                      <button onClick={handledelete}>DELETE</button>
                          <br />
                         {expense.category}
                        

@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import './show.css';
 import Forms from './form';
 
-export default function Tracker() {
-    let [data, setdata] = useState({ description: "", amount: "", category: "" });
-    let [expense, setexpense] = useState([]);
 
+export default function Tracker() {
+    let [data, setdata] = useState({ description: "", amount:0, category: "" });
+    let [expense, setexpense] = useState([]);
+    let [total,settotal]=useState(0);
     let handlechange = (event) => {
         let field = event.target.name;
         let val = event.target.value;
@@ -18,6 +19,7 @@ export default function Tracker() {
 
     let handlesubmit = (event) => {
         event.preventDefault();
+        const a=parseFloat(data.amount);
         setexpense([
             ...expense, {
                 description: data.description,
@@ -25,10 +27,12 @@ export default function Tracker() {
                 category: data.category
             }
         ]);
-        console.dir(expense);
+      settotal(prevtotal=>prevtotal+a);
+        console.log(total); 
+      console.dir(expense);
         setdata({
             description: "",
-            amount: "",
+            amount: 0,
             category: ""
         });
     }
@@ -40,7 +44,7 @@ export default function Tracker() {
                     <h1>HELLO</h1>
                     <div className="amt">
                         <p>Total:</p>
-                        <h2>&#8377;500</h2>
+                        <h2>&#8377;{total}</h2>
                     </div>
          <ul>
               {expense.map((expense, index) => (

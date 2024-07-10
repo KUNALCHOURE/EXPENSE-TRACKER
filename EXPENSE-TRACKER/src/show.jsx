@@ -38,31 +38,30 @@ export default function Tracker() {
     }
 
     let handledelete=()=>{
-        
+       
     }
     return (
         <>
-            <div className="main">
-                <div className="track">
-                    <h1>HELLO</h1>
-                    <div className="amt">
-                        <p>Total:</p>
-                        <h2>&#8377;{total}</h2>
-                    </div>
-         <ul>
-              {expense.map((expense, index) => (
-                    <li key={index}>
-                      {expense.description} - {expense.amount}
-                      <button onClick={handledelete}>DELETE</button>
-                         <br />
-                        {expense.category}
-                       
-                            </li>
-                        ))}
-            </ul>
-                </div>
-                <Forms data={data} handlechange={handlechange} handlesubmit={handlesubmit} />
-            </div>
+      <div className="main">
+           <div className="track">
+                 <h1>HELLO</h1>
+                <div className="amt">
+                    <p>Total:</p>
+                   <h2>&#8377;{total}</h2>
+               </div>
+     <ul>
+      {expense.map((expense, index) => (
+         <li key={index}>
+               {expense.description} - {expense.amount}
+               <button onClick={handledelete}>DELETE</button>
+                 <br />
+                   {expense.category}     
+                  </li>
+          ))}
+      </ul>
+   </div>
+  <Forms data={data} handlechange={handlechange} handlesubmit={handlesubmit} />
+      </div>
         </>
     );
 }

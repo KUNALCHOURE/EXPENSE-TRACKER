@@ -27,9 +27,15 @@ color: #343a40;
 }
 .form{
     border: 1px solid black;
-    
     height: 500px;
     border-radius: 20px;
     margin-left: 50px;
     padding: 50px;
+}
+li{
+    background-color: lightgray;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+
 }

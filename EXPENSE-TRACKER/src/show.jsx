@@ -40,8 +40,15 @@ export default function Tracker() {
     }
 
     let handledelete=(id,amt)=>{
+        let aa=parseFloat(amt);
        setexpense((prevexpense)=>expense.filter((prevexpense)=>prevexpense.id!=id))
-     
+       settotal((prevtotal)=>{
+      
+        prevtotal=parseFloat(prevtotal);
+        prevtotal=prevtotal-aa;
+        return prevtotal;
+       })
+    
     }
     return (
         <>

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './show.css';
 import Forms from './form';
-
+import { v4 as uuidv4 } from 'uuid';
 
 export default function Tracker() {
-    let [data, setdata] = useState({ description: "", amount:0, category: "" });
+    let [data, setdata] = useState({ description: "", amount:0,id:uuidv4(), category: "" });
     let [expense, setexpense] = useState([]);
     let [total,settotal]=useState(0);
     let handlechange = (event) => {
@@ -24,6 +24,7 @@ export default function Tracker() {
             ...expense, {
                 description: data.description,
                 amount: data.amount,
+                id:uuidv4(),
                 category: data.category
             }
         ]);
@@ -33,6 +34,7 @@ export default function Tracker() {
         setdata({
             description: "",
             amount: 0,
+            id:uuidv4(),
             category: ""
         });
     }

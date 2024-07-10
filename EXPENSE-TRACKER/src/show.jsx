@@ -39,8 +39,9 @@ export default function Tracker() {
         });
     }
 
-    let handledelete=()=>{
-       
+    let handledelete=(id,amt)=>{
+       setexpense((prevexpense)=>expense.filter((prevexpense)=>prevexpense.id!=id))
+     
     }
     return (
         <>
@@ -53,9 +54,9 @@ export default function Tracker() {
                </div>
      <ul>
       {expense.map((expense, index) => (
-         <li key={index}>
+         <li key={expense.id}>
                {expense.description} - {expense.amount}
-               <button onClick={handledelete}>DELETE</button>
+               <button onClick={()=>handledelete(expense.id,expense.amount)}>DELETE</button>
                  <br />
                    {expense.category}     
                   </li>

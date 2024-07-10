@@ -62,10 +62,18 @@ export default function Tracker() {
      <ul>
       {expense.map((expense, index) => (
          <li key={expense.id}>
+            <div>
                {expense.description} - {expense.amount}
+               </div>
+              
+               <div>
+               {expense.category}
+               </div>
+               <div>
                <button onClick={()=>handledelete(expense.id,expense.amount)}>DELETE</button>
+               </div>
                  <br />
-                   {expense.category}     
+                        
                   </li>
           ))}
       </ul>

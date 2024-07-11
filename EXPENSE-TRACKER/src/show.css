@@ -40,7 +40,7 @@
   .form {
     background-color: #3a3a3a; 
     border: 1px solid #bbbbbb; 
-    height: 500px;
+    height: 550px;
     border-radius: 20px;
     margin-left: 50px;
     padding-left:50px;
@@ -55,6 +55,9 @@
     height: 45px;
   }
   .form div{
+    margin-bottom: 20px;
+  }
+  .form h2{
     margin-bottom: 20px;
   }
   li {

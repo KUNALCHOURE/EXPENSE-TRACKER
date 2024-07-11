@@ -9,7 +9,7 @@
   .track {
     border-radius: 20px;
     width: 500px;
-    height: 500px;
+    height: 550px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #3a3a3a; 
@@ -71,7 +71,9 @@
   }
   
   li button {
-    position: relative;
+    position: absolute;
+    right: 0px;
+    top: 5px;
     background-color: #dc3545;
     border: none;
     color: #fff;
@@ -84,3 +86,8 @@
     background-color: #c82333;
   }
   
+  ul{
+    max-height: 260px;
+    overflow-y: auto;
+   padding-left: 0px;
+  }

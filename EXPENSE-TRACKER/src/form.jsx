@@ -18,6 +18,7 @@ export default function Forms({ data, handlechange, handlesubmit }) {
                         required
                     />
                 </div>
+                <br />
                 <div className="mb-3">
                     <label htmlFor="amount" className="form-label">Amount</label>
                     <input
@@ -31,6 +32,7 @@ export default function Forms({ data, handlechange, handlesubmit }) {
                         required
                     />
                 </div>
+                <br />
                 <div className="mb-3">
                     <label htmlFor="category" className="form-label">Category</label>
                     <select
@@ -49,6 +51,7 @@ export default function Forms({ data, handlechange, handlesubmit }) {
                         <option value="Other">Other</option>
                     </select>
                 </div>
+                <br />
                 <button type="submit" className="btn btn-primary">Add Expense</button>
             </form>
         </div>

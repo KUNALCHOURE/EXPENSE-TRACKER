@@ -44,14 +44,18 @@
     height: 500px;
     border-radius: 20px;
     margin-left: 50px;
-    padding: 50px;
+    padding-left:50px;
+    padding-right:50px;
+    padding-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
-   
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   .form .btn-primary{
     background-color: #11273d;
     border: none;
+  }
+  .form div{
+    margin-bottom: 20px;
   }
   li {
     background-color: #444444; /* Medium Gray */

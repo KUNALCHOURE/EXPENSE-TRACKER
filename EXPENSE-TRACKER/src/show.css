@@ -53,6 +53,7 @@
   .form .btn-primary{
     background-color: #11273d;
     border: none;
+    height: 45px;
   }
   .form div{
     margin-bottom: 20px;

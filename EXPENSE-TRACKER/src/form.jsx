@@ -14,7 +14,7 @@ export default function Forms({ data, handlechange, handlesubmit }) {
                         name="description"
                         onChange={handlechange}
                         value={data.description}
-                        placeholder="Enter expense description"
+                        placeholder="Enter Expense Description"
                         required
                     />
                 </div>

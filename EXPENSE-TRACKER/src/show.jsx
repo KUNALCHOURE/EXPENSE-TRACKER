@@ -7,6 +7,7 @@ export default function Tracker() {
     let [data, setdata] = useState({ description: "", amount:0,id:uuidv4(), category: "" });
     let [expense, setexpense] = useState([]);
     let [total,settotal]=useState(0);
+
     let handlechange = (event) => {
         let field = event.target.name;
         let val = event.target.value;

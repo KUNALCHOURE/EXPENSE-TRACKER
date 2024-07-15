@@ -37,6 +37,6 @@ The Expense Tracker is a web-based application designed to help users manage the
 ![Screenshot 2024-07-15 204527](https://github.com/user-attachments/assets/7b1c3e33-0374-4767-97aa-89649ec16718)
 
 ## Live Application
-You can access the live application [here](https://KUNALCHOURE.github.io/EXPENSE-TRACKER).
+You can access the live application [EXPENSE-TRACKER](https://KUNALCHOURE.github.io/EXPENSE-TRACKER).
 
 

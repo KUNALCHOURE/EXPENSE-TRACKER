@@ -34,7 +34,7 @@ The Expense Tracker is a web-based application designed to help users manage the
 - **Summary**: Provides a summary of the total balance, income, and expenses.
 
 ## Screenshot
-[Screenshot 2024-07-15 204527](https://github.com/user-attachments/assets/08b22fbe-ba5d-46f1-8a41-f7bb980e8e4c)
+![Screenshot 2024-07-15 204527](https://github.com/user-attachments/assets/7b1c3e33-0374-4767-97aa-89649ec16718)
 
 ## Live Application
 You can access the live application [here](https://KUNALCHOURE.github.io/EXPENSE-TRACKER).

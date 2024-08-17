@@ -60,24 +60,20 @@ export default function Tracker() {
                     <p>Total:</p>
                    <h2>&#8377;{total}</h2>
                </div>
-     <ul>
-      {expense.map((expense, index) => (
-         <li key={expense.id}>
-            <div>
-               {expense.description} - {expense.amount}
-               </div>
-              
-               <div>
-               {expense.category}
-               </div>
-               <div>
-               <button onClick={()=>handledelete(expense.id,expense.amount)}>DELETE</button>
-               </div>
-                 <br />
-                        
-                  </li>
-          ))}
-      </ul>
+               <ul>
+  {expense.map((expense, index) => (
+    <li key={expense.id}>
+      <div>
+        {expense.description} - {expense.amount}
+      </div>
+      <div className="category">
+        {expense.category}
+      </div>
+      <button onClick={() => handledelete(expense.id, expense.amount)}>DELETE</button>
+    </li>
+  ))}
+</ul>
+
    </div>
   <Forms data={data} handlechange={handlechange} handlesubmit={handlesubmit} />
       </div>

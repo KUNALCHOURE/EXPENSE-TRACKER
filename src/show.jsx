@@ -34,7 +34,7 @@ export default function Tracker() {
       console.dir(expense);
         setdata({
             description: "",
-            amount: 0,
+            amount: "",
             id:uuidv4(),
             category: ""
         });
@@ -55,7 +55,7 @@ export default function Tracker() {
         <>
       <div className="main">
            <div className="track">
-                 <h1>HELLO</h1>
+           <h1>Expense Overview</h1>
                 <div className="amt">
                     <p>Total:</p>
                    <h2>&#8377;{total}</h2>
